@@ -1,0 +1,27 @@
+:root{
+	--landing-color: rgb(206, 245, 248) ;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.landing-page{
+	background-image: url('../assets/landing.jpg');
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	/* background-attachment:fixed; */
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+@media only screen and (max-width:700px){
+	.landing-page{
+		background-image:none;
+		background-color: var(--landing-color);
+	}
+}
