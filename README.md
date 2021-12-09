@@ -15,7 +15,7 @@ So we started an open source project to collect all things in one website.
 - [x] Create Nav bar
 - [ ] Create Heading
 - [ ] Add Favicon
-- [ ] Add OG metas
+- [x] Add OG metas
 
 > Suggestions are welcomed in issue section
 
