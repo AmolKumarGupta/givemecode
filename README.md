@@ -13,9 +13,10 @@ So we started an open source project to collect all things in one website.
 ## **To-Do** **List**
 - [x] Starter template
 - [x] Create Nav bar
-- [ ] Create Heading
-- [ ] Add Favicon
+- [x] Create Heading
+- [x] Add Favicon
 - [x] Add OG metas
+- [ ] Add Keywords
 
 > Suggestions are welcomed in issue section
 
