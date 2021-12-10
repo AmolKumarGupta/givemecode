@@ -13,15 +13,49 @@ html{
 .landing-page{
 	background-image: url('../assets/landing.jpg');
 	background-repeat: no-repeat;
-	background-size: 100vw;
+	background-size: 100vw 100vh;
 	/* background-attachment:fixed; */
 	min-height: 100vh;
-	max-height: 100vh;
+	max-height: calc((478*100vh)/850);
+	position:relative;
+}
+
+.heading3d{
+	font-size: calc(2.375rem + 1.5vw);
+	color: khaki;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-200%,-50%) skewY(3deg);
+}
+.myshadow{
+	font-family: "Courgette","rig bold face",Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 5px rgb(160, 157, 157),
+				 0px 0px 5px rgb(160, 157, 157),
+				 2px 2px 5px rgb(119, 117, 117),
+				 3px 3px 5px rgb(119, 117, 117),
+				 4px 4px 5px rgb(160, 157, 157),
+				 5px 5px 5px rgb(160, 157, 157);
+	transition: all 0.12s ease-out;
+	-webkit-transition: all 0.12s ease-out;
+	-moz-transition: all 0.12s ease-out;
+	-ms-transition: all 0.12s ease-out;
+	-o-transition: all 0.12s ease-out;
+}
+.myshadow:hover{
+	/* transform: translate(-201%, -51%); */
+	position: relative;
+	top: -3px;
+	left: -3px;
+
 }
 
 @media only screen and (max-width:700px){
 	.landing-page{
 		background-image:none;
 		background-color: var(--landing-color);
+	}
+	.heading3d{
+		transform: translate(-50%,-50%);
 	}
 }
