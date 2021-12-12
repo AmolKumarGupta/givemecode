@@ -1,4 +1,4 @@
-# **Give me code**
+# <div align="center"> **Give me code** </div>
 we all are programmer who knows a lot of syntax but we cant memorize all things.So we need external help in problems like
 1. sorting a table in js
 2. minifying the code
