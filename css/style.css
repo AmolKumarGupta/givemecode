@@ -1,14 +1,12 @@
 :root{
-	--landing-color: rgb(206, 245, 248) ;
+	--landing-color: #cfe4e9;
 }
 *{
 	margin: 0;
 	padding: 0;
 }
-
-html{
-	scroll-behavior: smooth;
-}
+html{scroll-behavior: smooth;}
+.bg-softdark{background-color:#535657;}
 
 .landing-page{
 	background-image: url('../assets/landing.jpg');
@@ -22,14 +20,15 @@ html{
 
 .heading3d{
 	font-size: calc(2.375rem + 1.5vw);
-	color: khaki;
+	color: rgb(247, 225, 31);
 	position: absolute;
 	top:50%;
 	left:50%;
 	transform: translate(-200%,-50%) skewY(3deg);
 }
 .myshadow{
-	font-family: "Courgette","rig bold face",Arial, Helvetica, sans-serif;
+	font-family: "rig bold face",Arial, Helvetica, sans-serif;
+	font-style: italic;
 	text-shadow: 1px 1px 5px rgb(160, 157, 157),
 				 0px 0px 5px rgb(160, 157, 157),
 				 2px 2px 5px rgb(119, 117, 117),
@@ -47,15 +46,14 @@ html{
 	position: relative;
 	top: -3px;
 	left: -3px;
-
 }
-
-@media only screen and (max-width:700px){
+@media only screen and (max-width:720px){
 	.landing-page{
-		background-image:none;
+		background-image:url('../assets/landing-v.jpg');
 		background-color: var(--landing-color);
 	}
 	.heading3d{
 		transform: translate(-50%,-50%);
+		color:#f2f013;
 	}
 }
