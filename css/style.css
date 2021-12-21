@@ -7,7 +7,9 @@
 }
 html{scroll-behavior: smooth;}
 .bg-softdark{background-color:#535657;}
-
+.bg-skyblue{background-color:#f0f4f6;}
+.pos-r{position: relative;}
+.center-icon{position:absolute;transform: translate(-50%,32%) scale(1.5);}
 .landing-page{
 	background-image: url('../assets/landing.jpg');
 	background-repeat: no-repeat;
