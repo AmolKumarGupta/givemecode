@@ -59,3 +59,23 @@ html{scroll-behavior: smooth;}
 		color:#f2f013;
 	}
 }
+
+.dark-mode-body{
+    background-color: #202020;
+    color: #fff;
+}
+
+.landing-page-dark{
+	background-image: url('../assets/landing_dark.png');
+}
+
+.bg-skyblue-dark{background-color:#606060;}
+
+.heading3d-dark{
+	color: rgb(251, 236, 98);
+}
+
+#modeButton svg {
+	width: 30px;
+	height: 30px;
+}
