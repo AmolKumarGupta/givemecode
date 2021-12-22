@@ -150,4 +150,20 @@
 		bodyContainer.classList.toggle("heading3d-dark");
 		
 	}
+	
+	document.body.addEventListener("keydown", function (event) {
+		console.log(event.key)
+		if (event.key === "a") {
+			window.location.replace("https://givemecode.pages.dev/php");
+		}
+		
+		if (event.key === "u") {
+			var i = 2000;
+		    var int = setInterval(function() {
+		    window.scrollTo(0, i);
+		    i -= 10;
+		    if (i <= 10) clearInterval(int);
+		    }, 0);
+				}
+		});
 </script>
