@@ -34,13 +34,13 @@
 		<link rel="preload" href="assets/landing.jpg" as="image"/>
 	</head>
 	<body >
-		<div class="landing-page" id="landingPage">
+		<div class="landing-page">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container-fluid ">
+					<div class="container-fluid">
 
 					  	<a class="navbar-brand" href="/"><img src="assets/bird.svg" alt="bird sitting on a stick" srcset="assets/bird.svg" width="48px" height="48px"></a>
-					  	<button class="navbar-toggler bg-light border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  	<button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					  	</button>
 
@@ -64,20 +64,15 @@
 						  	<li class="nav-item">
 								<a class="nav-link " href="web/" tabindex="-1" aria-disabled="true">Web</a>
 						  	</li>
-						  	
 						  	<li>
-								<button class="btn light" id="modeButton" onclick="changeMode()">
-									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-										 width="70" height="70"
-										 viewBox="0 0 172 172"
-										 style=" fill:#000000;">
-										<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
-										   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
-										   stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-										   style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+								<button class="btn light" id="toggleBtn" >
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 172 172" style=" fill:#000000;">
+										<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
 											<g fill="#000">
-												<path d="M85.6775,13.6525c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v20.64c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-20.64c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM36.6575,33.8625c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l14.62,14.62c0.83313,1.02125 2.16344,1.49156 3.45344,1.19594c1.27656,-0.29562 2.28438,-1.30344 2.58,-2.58c0.29563,-1.29 -0.17469,-2.62031 -1.19594,-3.45344l-14.62,-14.62c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075c-0.1075,0 -0.215,0 -0.3225,0zM134.2675,33.8625c-0.77937,0.1075 -1.505,0.49719 -2.0425,1.075l-14.62,14.62c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l14.62,-14.62c1.075,-1.02125 1.38406,-2.62031 0.7525,-3.96406c-0.645,-1.35719 -2.06937,-2.13656 -3.5475,-1.94844zM85.6775,51.6c-0.1075,0.02688 -0.215,0.06719 -0.3225,0.1075c-0.215,0.01344 -0.43,0.05375 -0.645,0.1075c-0.04031,0.04031 -0.06719,0.06719 -0.1075,0.1075c-18.24812,0.77938 -33.0025,15.64125 -33.0025,34.0775c0,18.93344 15.46656,34.4 34.4,34.4c18.93344,0 34.4,-15.46656 34.4,-34.4c0,-18.36906 -14.63344,-33.17719 -32.7875,-34.0775c-0.12094,0 -0.20156,-0.1075 -0.3225,-0.1075c-0.34937,-0.13437 -0.71219,-0.20156 -1.075,-0.215c-0.06719,0 -0.14781,0 -0.215,0c-0.1075,0 -0.215,0 -0.3225,0zM85.785,58.48c0.06719,0 0.14781,0 0.215,0c0.1075,0 0.215,0 0.3225,0c15.05,0.17469 27.1975,12.42969 27.1975,27.52c0,15.21125 -12.30875,27.52 -27.52,27.52c-15.19781,0 -27.52,-12.30875 -27.52,-27.52c0,-15.13062 12.20125,-27.39906 27.305,-27.52zM16.2325,82.56c-1.89469,0.26875 -3.225,2.02906 -2.95625,3.92375c0.26875,1.89469 2.02906,3.225 3.92375,2.95625h20.64c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-20.64c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM133.1925,82.56c-1.89469,0.26875 -3.225,2.02906 -2.95625,3.92375c0.26875,1.89469 2.02906,3.225 3.92375,2.95625h20.64c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-20.64c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM51.6,116.53c-0.77937,0.1075 -1.505,0.49719 -2.0425,1.075l-14.62,14.62c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l14.62,-14.62c1.02125,-0.98094 1.33031,-2.49937 0.77938,-3.80281c-0.5375,-1.30344 -1.84094,-2.13656 -3.25188,-2.10969c-0.1075,0 -0.215,0 -0.3225,0zM119.325,116.53c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l14.62,14.62c0.83313,1.02125 2.16344,1.49156 3.45344,1.19594c1.27656,-0.29562 2.28438,-1.30344 2.58,-2.58c0.29563,-1.29 -0.17469,-2.62031 -1.19594,-3.45344l-14.62,-14.62c-0.645,-0.68531 -1.53187,-1.06156 -2.4725,-1.075c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM85.6775,130.6125c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v20.64c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-20.64c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719z">
-												</path></g></g></svg>
+												<path d="M85.6775,13.6525c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v20.64c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-20.64c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM36.6575,33.8625c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l14.62,14.62c0.83313,1.02125 2.16344,1.49156 3.45344,1.19594c1.27656,-0.29562 2.28438,-1.30344 2.58,-2.58c0.29563,-1.29 -0.17469,-2.62031 -1.19594,-3.45344l-14.62,-14.62c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075c-0.1075,0 -0.215,0 -0.3225,0zM134.2675,33.8625c-0.77937,0.1075 -1.505,0.49719 -2.0425,1.075l-14.62,14.62c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l14.62,-14.62c1.075,-1.02125 1.38406,-2.62031 0.7525,-3.96406c-0.645,-1.35719 -2.06937,-2.13656 -3.5475,-1.94844zM85.6775,51.6c-0.1075,0.02688 -0.215,0.06719 -0.3225,0.1075c-0.215,0.01344 -0.43,0.05375 -0.645,0.1075c-0.04031,0.04031 -0.06719,0.06719 -0.1075,0.1075c-18.24812,0.77938 -33.0025,15.64125 -33.0025,34.0775c0,18.93344 15.46656,34.4 34.4,34.4c18.93344,0 34.4,-15.46656 34.4,-34.4c0,-18.36906 -14.63344,-33.17719 -32.7875,-34.0775c-0.12094,0 -0.20156,-0.1075 -0.3225,-0.1075c-0.34937,-0.13437 -0.71219,-0.20156 -1.075,-0.215c-0.06719,0 -0.14781,0 -0.215,0c-0.1075,0 -0.215,0 -0.3225,0zM85.785,58.48c0.06719,0 0.14781,0 0.215,0c0.1075,0 0.215,0 0.3225,0c15.05,0.17469 27.1975,12.42969 27.1975,27.52c0,15.21125 -12.30875,27.52 -27.52,27.52c-15.19781,0 -27.52,-12.30875 -27.52,-27.52c0,-15.13062 12.20125,-27.39906 27.305,-27.52zM16.2325,82.56c-1.89469,0.26875 -3.225,2.02906 -2.95625,3.92375c0.26875,1.89469 2.02906,3.225 3.92375,2.95625h20.64c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-20.64c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM133.1925,82.56c-1.89469,0.26875 -3.225,2.02906 -2.95625,3.92375c0.26875,1.89469 2.02906,3.225 3.92375,2.95625h20.64c1.23625,0.01344 2.39188,-0.63156 3.02344,-1.70656c0.61813,-1.075 0.61813,-2.39187 0,-3.46687c-0.63156,-1.075 -1.78719,-1.72 -3.02344,-1.70656h-20.64c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM51.6,116.53c-0.77937,0.1075 -1.505,0.49719 -2.0425,1.075l-14.62,14.62c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l14.62,-14.62c1.02125,-0.98094 1.33031,-2.49937 0.77938,-3.80281c-0.5375,-1.30344 -1.84094,-2.13656 -3.25188,-2.10969c-0.1075,0 -0.215,0 -0.3225,0zM119.325,116.53c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l14.62,14.62c0.83313,1.02125 2.16344,1.49156 3.45344,1.19594c1.27656,-0.29562 2.28438,-1.30344 2.58,-2.58c0.29563,-1.29 -0.17469,-2.62031 -1.19594,-3.45344l-14.62,-14.62c-0.645,-0.68531 -1.53187,-1.06156 -2.4725,-1.075c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM85.6775,130.6125c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v20.64c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-20.64c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719z"></path>
+											</g>
+										</g>
+									</svg>
 								</button>
 						  	</li>
 						</ul>
@@ -86,84 +81,53 @@
 				</nav>
 			</div>
 			<!-- main heading  -->
-			<h1 class="heading3d " id="heading3d"><span class="myshadow">Give</span><br>&nbsp;<span class="myshadow">me</span><br><span class="myshadow">Code</span></h1>
+			<h1 class="heading3d "><span class="myshadow">Give</span><br>&nbsp;<span class="myshadow">me</span><br><span class="myshadow">Code</span></h1>
 		</div><!--page1 end-->
-		<div id="home" class="container-md d-flex justify-content-center text-center pt-5 fs-4 fst-italic">
+		<div id="home" class="container-md d-flex justify-content-center text-center text-color pt-5 fs-4 fst-italic">
 			Needs collection of all development tools, we say Yes<br/>Needs website to learn, we say Yes<br/>We have starter code and logic of Commonly used and unique things.<br/>To make your web journey easy.
 		</div>
-		<div id="docs" class="container-md d-flex justify-content-evenly flex-wrap p-5">
+		<div id="docs" class="container-md d-flex justify-content-evenly flex-wrap p-5 text-color">
 			<div class="card text-center m-2 shadow-lg p-3 my-5 bg-skyblue rounded pos-r" style="width: 18rem;">
 				<div class="card-body">
 				  <h2 class="card-title">PHP</h2>
 				  <p class="card-text">Our first server-side language that introduced us with server and its power.<br/>Old is gold.</p>
-				  <a href="php" class="btn btn-primary rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
+				  <a href="php" class="btn btn-blue rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="card text-center m-2 shadow-lg p-3 my-5 bg-skyblue rounded pos-r" style="width: 18rem;">
 				<div class="card-body">
 				  <h2 class="card-title">HTML</h2>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="html" class="btn btn-primary rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
+				  <a href="html" class="btn btn-blue rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="card text-center m-2 shadow-lg p-3 my-5 bg-skyblue rounded pos-r" style="width: 18rem;">
 				<div class="card-body">
 				  <h2 class="card-title">Javascript</h2>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="javascript" class="btn btn-primary rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
+				  <a href="javascript" class="btn btn-blue rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="card text-center m-2 shadow-lg p-3 my-5 bg-skyblue rounded pos-r" style="width: 18rem;">
 				<div class="card-body">
 				  <h2 class="card-title">WEB</h2>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="web" class="btn btn-primary rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
+				  <a href="web" class="btn btn-blue rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="card text-center m-2 shadow-lg p-3 my-5 bg-skyblue rounded pos-r" style="width: 18rem;">
 				<div class="card-body">
 				  <h2 class="card-title">Tools</h2>
 				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				  <a href="tools" class="btn btn-primary rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
+				  <a href="tools" class="btn btn-blue rounded-circle center-icon"><i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 		</div><!--page2 end-->
 		<div id="about" class="container-fluid bg-softdark text-light text-center p-4 lh-lg"><span class="badge rounded-pill bg-info text-dark">Owner </span>&nbsp;<span class="badge rounded-pill bg-primary">Amol</span>
 			<br/><span class="badge rounded-pill alert-danger text-dark">Copyright 2021-2022</span>
-			<br/><span class="badge rounded-pill alert-success text-dark">v0.08</span>
+			<br/><span class="badge rounded-pill alert-success text-dark">v1.10</span>
 			<br/><a class="color-none" href="https://www.instagram.com/invites/contact/?i=1qp00q752qc7s&utm_content=5g7v6fa" target="_blank" rel="nofollow"><span class="badge rounded-pill bg-light text-dark"><i class="fab fa-instagram" ></i></span></a>&nbsp;<span class="badge rounded-pill bg-light text-dark"><i class="fab fa-facebook-f" ></i></span></div>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
 </html>
-
-<script>
-	function changeMode() {
-		var bodyContainer = document.body;
-		bodyContainer.classList.toggle("dark-mode-body");
-		var bodyContainer = document.getElementById('landingPage');
-		bodyContainer.classList.toggle("landing-page-dark");
-		var bodyContainer = document.getElementsByClassName('bg-skyblue');
-		for(var i = 0; i<bodyContainer.length ;i++) {
-			bodyContainer[i].classList.toggle("bg-skyblue-dark");
-		}
-		var bodyContainer = document.getElementById('heading3d');
-		bodyContainer.classList.toggle("heading3d-dark");
-		
-	}
-	
-	document.body.addEventListener("keydown", function (event) {
-		console.log(event.key)
-		if (event.key === "a") {
-			window.location.replace("https://givemecode.pages.dev/php");
-		}
-		
-		if (event.key === "u") {
-			var i = 2000;
-		    var int = setInterval(function() {
-		    window.scrollTo(0, i);
-		    i -= 10;
-		    if (i <= 10) clearInterval(int);
-		    }, 0);
-				}
-		});
-</script>
