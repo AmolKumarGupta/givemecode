@@ -1,33 +1,72 @@
 :root{
 	color-scheme: light dark;
 }
-*{
-	margin: 0;
-	padding: 0;
-}
+*{ margin: 0;padding: 0;}
 body{
+	background-color:white;
 	--landing-color: #cfe4e9;
 	--softdark:#535657;
 	--skyblue:#f0f4f6;
-	--darkblue:#0d6efd;
 	--yellow:rgb(247, 225, 31);
 	--lightyellow:#f2f013;
+	--text-color:#212529;
+	--btn-icon-bg:#0d6efd;
+	--btn-icon:white;
+}
+body.darktheme{
+	background-color:#212121;
+	--softdark:#2e2d2d;
+	--skyblue:#6c777c;
+	--text-color:#e0e0e0;
+	--btn-icon-bg:#2a2e35;
+	--btn-icon:#9e9e9e;
+}
+body.darktheme .landing-page{
+	filter: brightness(.8) contrast(1.2) grayscale(0.1);
+}
+
+@media (prefers-color-scheme:dark){
+	body{
+		background-color:#212121;
+		--softdark:#2e2d2d;
+		--skyblue:#6c777c;
+		--text-color:#e0e0e0;
+		--btn-icon-bg:#2a2e35;
+		--btn-icon:#9e9e9e;
+	}
+	.landing-page{
+		filter: brightness(.8) contrast(1.2) grayscale(0.1);
+	}
+	body.lighttheme{
+		background-color:white;
+		--landing-color: #cfe4e9;
+		--softdark:#535657;
+		--skyblue:#f0f4f6;
+		--yellow:rgb(247, 225, 31);
+		--lightyellow:#f2f013;
+		--text-color:#212529;
+		--btn-icon-bg:#0d6efd;
+		--btn-icon:white;
+	}
+	body.lighttheme .landing-page{
+		filter: brightness(1) contrast(1) grayscale(0);
+	}
 }
 html{scroll-behavior: smooth;}
 .bg-softdark{background-color:var(--softdark);}
 .bg-skyblue{background-color:var(--skyblue);}
-.btn-blue{ background-color: var(--darkblue); }
+.btn-blue{ background-color: var(--btn-icon-bg); }
 .pos-r{position: relative;}
-.center-icon{position:absolute;transform: translate(-50%,32%) scale(1.5);}
+.text-color{color:var(--text-color);}
+.center-icon{position:absolute;transform: translate(-50%,37%) scale(1.5);}
 /* modification */
 .btn:focus ,.navbar-toggler:focus ,a:focus{ box-shadow: none !important; }
-.btn ,.btn:hover{ color:white; }
+.btn ,.btn:hover{ color:var(--btn-icon); }
 
 .landing-page{
 	background-image: url('../assets/landing.jpg');
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
-	/* background-attachment:fixed; */
 	min-height: 100vh;
 	max-height: calc((478*100vh)/850);
 	position:relative;
@@ -61,7 +100,7 @@ html{scroll-behavior: smooth;}
 	top: -3px;
 	left: -3px;
 }
-#modeButton svg{ width:30px; height:30px; }
+#toggleBtn svg{ width:30px; height:30px; }
 
 @media only screen and (max-width:720px){
 	.landing-page{
