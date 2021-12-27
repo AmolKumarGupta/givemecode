@@ -1,0 +1,25 @@
+@import "/css/style.css";
+body{ color:var(--text-color);}
+.js-heading-color{ --title-color:#fcdc00; }
+.title-section{
+  max-width: 500px;
+  margin:0 auto;
+  padding:1rem;
+  border:4px solid var(--title-color);
+  border-radius:15px;
+}
+#title-head{
+  font-size: calc(4rem + 1vw);
+  color: var(--title-color);
+}
+#info-card div{
+  background-color: #ffffff;
+  color:black;
+}
+
+@media screen and (max-width:550px){
+  .title-section{ max-width:230px;}
+}
+@media screen and (min-width:720px){
+  .max-width-l{ max-width:200px}
+}

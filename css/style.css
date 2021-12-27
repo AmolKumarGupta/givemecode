@@ -3,7 +3,7 @@
 }
 *{ margin: 0;padding: 0;}
 body{
-	background-color:white;
+	background-color:#f6f8fa;
 	--landing-color: #cfe4e9;
 	--softdark:#535657;
 	--skyblue:#f0f4f6;
@@ -16,7 +16,7 @@ body{
 body.darktheme{
 	background-color:#212121;
 	--softdark:#2e2d2d;
-	--skyblue:#6c777c;
+	--skyblue:#21262d;
 	--text-color:#e0e0e0;
 	--btn-icon-bg:#2a2e35;
 	--btn-icon:#9e9e9e;
@@ -29,7 +29,7 @@ body.darktheme .landing-page{
 	body{
 		background-color:#212121;
 		--softdark:#2e2d2d;
-		--skyblue:#6c777c;
+		--skyblue:#21262d;
 		--text-color:#e0e0e0;
 		--btn-icon-bg:#2a2e35;
 		--btn-icon:#9e9e9e;
@@ -38,7 +38,7 @@ body.darktheme .landing-page{
 		filter: brightness(.8) contrast(1.2) grayscale(0.1);
 	}
 	body.lighttheme{
-		background-color:white;
+		background-color:#f6f8fa;
 		--landing-color: #cfe4e9;
 		--softdark:#535657;
 		--skyblue:#f0f4f6;
