@@ -12,7 +12,7 @@ body{ color:var(--text-color);}
   font-size: calc(4rem + 1vw);
   color: var(--title-color);
 }
-#info-card div , #search-bar{
+#info-card div, #search-bar{
   background-color: #ffffff;
   color:black;
 }
