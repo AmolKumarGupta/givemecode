@@ -25,3 +25,26 @@ document.body.addEventListener("keydown",function(event){
 	}
 	if(event.key === "u"){ window.scrollTo(0, 0); }
 });
+
+const searchInput=document.querySelector('#search-bar');
+searchInput.addEventListener('keyup', function(){
+	let filteredInput=searchInput.value.toUpperCase();
+	const searchBlock=document.querySelectorAll('.search-block');
+	for(i=0; i<searchBlock.length; i++){
+		let title=searchBlock[i].getElementsByTagName('h5');
+		searchBlock[i].style.display = 'none';
+		if(title[0].innerText.toUpperCase().startsWith(filteredInput))
+		{
+			let parentBlock=searchBlock[i].parentNode;
+			parentBlock.insertBefore(searchBlock[i],parentBlock.childNodes[0]);
+			searchBlock[i].style.display = '';
+		}
+	}
+	for(i=0; i<searchBlock.length; i++){
+		let title=searchBlock[i].getElementsByTagName('h5');
+		if(title[0].innerText.toUpperCase().indexOf(filteredInput) > -1)
+		{
+			searchBlock[i].style.display = '';
+		}
+	}
+});
