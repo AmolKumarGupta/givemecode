@@ -78,7 +78,7 @@
 				<li>Game development</li>
 			</ol>
 		</div>
-	</section><!-- mainpage ends here --><hr/>
+	</section><!-- section ends here --><hr/>
 	<div class='container-fluid d-flex justify-content-center'><input id='search-bar' class='p-1 my-3' type="search" placeholder="Search Topics..."></div>
 	<div class="list-group mx-5">
 		<div class="list-group-item list-group-item-action mb-3 search-block">
@@ -88,7 +88,7 @@
 			</div>
 			<p class="mb-1">snippet diy</p>
 			<small class='text-muted'>how to make table in js.</small>
-		</div>
+		</div><!-- 001 -->
 		<div class="list-group-item list-group-item-action mb-3 search-block">
 			<div class="d-flex w-100 justify-content-between">
 				<h5 class="mb-1">Minify js</h5>
@@ -99,27 +99,72 @@
 		</div>
 		<div class="list-group-item list-group-item-action mb-3 search-block">
 			<div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">Art.js</h5>
+				<h5 class="mb-1"><a href="#003">Sum of Array</a></h5>
 				<small class="text-muted">7 jan</small>
 			</div>
-			<p class="mb-1">framework stylish</p>
-			<small class="text-muted">do canvas animation and 2d-simulation</small>
-		</div>
+			<p class="mb-1">snippet</p>
+			<small class="text-muted">a one-liner for sum of array.</small>
+		</div> <!-- 003 -->
+		<div class="list-group-item list-group-item-action mb-3 search-block">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1"><a href="#004">forEach</a></h5>
+				<small class="text-muted">12 jan</small>
+			</div>
+			<p class="mb-1">snippet , tutorial</p>
+			<small class="text-muted">Built-in method that take a callback function.</small>
+		</div><!-- 004 -->
+		<div class="list-group-item list-group-item-action mb-3 search-block">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1"><a href="#005">Map function</a></h5>
+				<small class="text-muted">12 jan</small>
+			</div>
+			<p class="mb-1">snippet , tutorial</p>
+			<small class="text-muted">Built-in method that take a callback function.</small>
+		</div><!-- 005 -->
+		<div class="list-group-item list-group-item-action mb-3 search-block">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1"><a href="#006">Filter function</a></h5>
+				<small class="text-muted">12 jan</small>
+			</div>
+			<p class="mb-1">snippet , tutorial</p>
+			<small class="text-muted">Built-in method that take a callback function.</small>
+		</div><!-- 006 -->
+		<div class="list-group-item list-group-item-action mb-3 search-block">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1"><a href="#007">Reduce function</a></h5>
+				<small class="text-muted">12 jan</small>
+			</div>
+			<p class="mb-1">snippet , tutorial</p>
+			<small class="text-muted">Built-in method that take a callback function.</small>
+		</div><!-- 007 -->
 	</div><!-- view topics ends here -->
 	<hr/>
 	<main class='p-4'>
-		<div>
+		<div id='003'>
 			<h5>Sum of Array</h5>
 			<pre class='line-numbers'>
 <code class='language-js'>let arr = [1,2,3];
-let sum = arr.reduce(
-  (acc,cur) => {
-    return acc+cur;
-  },0
-);
+let sum = arr.reduce((acc,cur) => acc+cur ,0);
 console.log(sum);
 </code></pre>
-		</div>
+		</div><hr><!-- 003 -->
+		<div id='004'>
+			<h5>forEach</h5>
+			<p>Iterate an array. It takes a callback function with element, index, and array itself.</p>
+			<pre class='line-numbers'>
+<code class='language-js'>Array.forEach( (element,index,array) => 
+	{ console.log(element,index,array) } 
+);
+</code></pre>
+<pre class='line-numbers'>
+<code class='language-js'>const str = ['apple','orange','pear'];
+str.forEach( ele => console.log(ele.toUpperCase()) );
+</code></pre>
+			<p><pre><code class='language-html'>	Output: APPLE
+			ORANGE
+			PEAR</code></pre>
+			</p>
+		</div><hr><!-- 004 -->
 	</main>
 </body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

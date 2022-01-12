@@ -1,4 +1,5 @@
 @import "/css/style.css";
+html{ scroll-behavior: auto; }
 body {
   color: var(--text-color);
 }
@@ -20,6 +21,9 @@ body {
 #search-bar {
   background-color: #ffffff;
   color: black;
+}
+.search-block a,.search-block a:hover,.search-block a:active{
+  color:black;
 }
 
 @media screen and (max-width: 550px) {
