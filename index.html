@@ -63,8 +63,25 @@
 								<a class="nav-link " href="javascript/" tabindex="-1" aria-disabled="true">Javascript</a>
 						  	</li>
 						  	<li class="nav-item">
-								<a class="nav-link " href="web/" tabindex="-1" aria-disabled="true">Web</a>
+								<a class="nav-link " href="web.html" tabindex="-1" aria-disabled="true">Web</a>
 						  	</li>
+
+							  <!-- Display a message -->
+    <div id="message">This is a message.</div>
+    
+    <!-- Button to display when the message is displayed -->
+    <button id="myButton">Click me</button>
+    
+    <script>
+        // JavaScript to show the button when the message is displayed
+        const messageDiv = document.getElementById('message');
+        const myButton = document.getElementById('myButton');
+        
+        messageDiv.addEventListener('click', function() {
+            // Show the button
+            myButton.style.display = 'block';
+        });
+    </script>
 						  	<li>
 								<button class="btn light" id="toggleBtn" >
 									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 172 172" style=" fill:#000000;">
